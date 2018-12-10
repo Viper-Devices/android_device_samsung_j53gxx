@@ -1,12 +1,15 @@
 
 # Inherit from common
-$(call inherit-product, device/samsung/j5-common/rr.mk)
+$(call inherit-product, device/samsung/j5-common/viper.mk)
 
 $(call inherit-product, device/samsung/j53gxx/device.mk)
 
+# Its Official ViperOS
+VIPER_BUILD_TYPE := OFFICIAL
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := j53gxx
-PRODUCT_NAME := rr_j53gxx
+PRODUCT_NAME := viper_j53gxx
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-J500H
 PRODUCT_MANUFACTURER := samsung
